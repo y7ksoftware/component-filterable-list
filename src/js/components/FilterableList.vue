@@ -162,7 +162,6 @@
 
 <template>
     <div class="filterableList">
-        OK SALI ZEME HEHEH
         <div class="filterableList-loadingIndicator" v-show="isLoading && !isLoadingIndicatorDisabled">
             <div class="filterableList-loadingIndicatorInner">
                 <div class="loadingSpinner"></div>
