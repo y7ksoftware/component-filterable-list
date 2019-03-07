@@ -1,6 +1,6 @@
 {
   "name": "@y7k/filterable-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A flexible container for a list if items with filter querying and pagination/batch loading",
   "main": "FilterableList.vue",
   "scripts": {
