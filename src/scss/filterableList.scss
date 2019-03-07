@@ -1,0 +1,72 @@
+$color-loading-fade: rgba(white, 0.8) !default;
+$filter-text-min-width: 300px !default;
+
+.filterableList {
+    position: relative;
+    width: 100%;
+}
+
+.filterableList-filter {
+    // Compensate the negative spacing on the filteritem that is needed if the filter is wrapped
+    @include spacing(bottom, s, $negative: true);
+    @include typo-text-s;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filterableList-filterItem {
+    @include spacing(bottom, s, true);
+    @include responsive-property(width, (phone: 100%, tablet: auto));
+    @include responsive-property(flex-grow, (phone: 1, tablet: 0));
+
+    &:not(:first-child) {
+        @include spacings(left, (tablet: s));
+    }
+}
+
+// The z-indizes are needed to solve the stacking context problem for
+// multiple vertical stacked dropdowns. see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Stacking_context_example_3
+.filterableList-filterItem:nth-child(1) .dropdown {
+    @include z-index(dropdown-lvl5, 104);
+}
+
+.filterableList-filterItem:nth-child(2) .dropdown {
+    @include z-index(dropdown-lvl4, 103);
+}
+
+.filterableList-filterItem:nth-child(3) .dropdown {
+    @include z-index(dropdown-lvl3, 102);
+}
+
+.filterableList-filterItem:nth-child(4) .dropdown {
+    @include z-index(dropdown-lvl2, 101);
+}
+
+.filterableList-filterItem:nth-child(5) .dropdown {
+    @include z-index(dropdown-lvl1, 100);
+}
+
+.filterableList-filterFieldText {
+    min-width: $filter-text-min-width;
+}
+
+.filterableList-loadingIndicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color-loading-fade, 0.8);
+    z-index: 1;
+}
+
+.filterableList-loadingIndicatorInner {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translateX(-50%) translateY(-50%);
+}
