@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/Y7K/filterable-list/issues"
   },
-  "homepage": "https://github.com/Y7K/filterable-list#readme"
+  "homepage": "https://github.com/Y7K/filterable-list#readme",
+  "dependencies": {
+    "lodash": "^4.0.0"
+  },
+  "peerDependencies": {
+    "vue": "^2.0.0"
+  }
 }

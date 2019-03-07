@@ -1,7 +1,6 @@
 <script>
 
-    import FilterFieldMixin from 'components/filterableList/FilterFieldMixin';
-    import Magnifier from 'components/text-input/assets/Magnifier';
+    import FilterFieldMixin from './FilterFieldMixin';
 
     /**
      *
@@ -13,10 +12,6 @@
                 type: [String],
                 default: '',
             },
-        },
-
-        components: {
-            Magnifier,
         },
 
         mixins: [
@@ -43,7 +38,6 @@
                 :placeholder="placeholder"
                 :value="value"
             ></text-input>
-            <magnifier class="textInput-magnifier"></magnifier>
         </div>
     </div>
 </template>

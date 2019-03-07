@@ -1,6 +1,6 @@
 <script>
 
-    import FilterFieldMixin from 'components/filterableList/FilterFieldMixin';
+    import FilterFieldMixin from './FilterFieldMixin';
 
     /**
      *
@@ -11,7 +11,7 @@
             FilterFieldMixin,
         ],
 
-        props: ['options', 'optionsConditional'],
+        props: ['options', 'optionsConditional', 'showArrow'],
 
 
         computed: {
@@ -38,11 +38,12 @@
         class="filterableList-filterItem"
         v-show="isVisible"
     >
-        <navigation-bar
+        <dropdown
             :options="activeOptions"
             :value="value"
             @input="input"
+            :showArrow="showArrow"
         >
-        </navigation-bar>
+        </dropdown>
     </div>
 </template>

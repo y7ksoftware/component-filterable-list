@@ -1,9 +1,8 @@
 
 <script>
 
-    import { buildQueryUrl, buildQueryString } from 'utils/url';
+    import { buildQueryUrl, buildQueryString, getURLHashbangAttributes } from '../utils/url';
     import omit from 'lodash/omit';
-    import { getURLHashbangAttributes } from 'components/filterableList/utils/utils';
 
     /**
      *
@@ -163,7 +162,7 @@
 
 <template>
     <div class="filterableList">
-
+        OK SALI ZEME HEHEH
         <div class="filterableList-loadingIndicator" v-show="isLoading && !isLoadingIndicatorDisabled">
             <div class="filterableList-loadingIndicatorInner">
                 <div class="loadingSpinner"></div>

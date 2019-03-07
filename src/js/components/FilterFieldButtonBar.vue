@@ -1,6 +1,6 @@
 <script>
 
-    import FilterFieldMixin from 'components/filterableList/FilterFieldMixin';
+    import FilterFieldMixin from './FilterFieldMixin';
 
     /**
      *
