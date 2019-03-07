@@ -2,7 +2,7 @@
   "name": "@y7k/filterable-list",
   "version": "1.0.2",
   "description": "A flexible container for a list if items with filter querying and pagination/batch loading",
-  "main": "FilterableList.vue",
+  "main": "src/js/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
