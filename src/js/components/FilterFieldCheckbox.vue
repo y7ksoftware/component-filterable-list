@@ -1,5 +1,6 @@
 <script>
 
+    import { Checkbox } from '@y7k/component-checkbox';
     import FilterFieldMixin from './FilterFieldMixin';
 
     /**
@@ -10,6 +11,10 @@
         mixins: [
             FilterFieldMixin,
         ],
+
+        components: {
+            Checkbox,
+        },
 
         props: ['label'],
 

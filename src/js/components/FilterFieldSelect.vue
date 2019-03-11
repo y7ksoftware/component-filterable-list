@@ -1,5 +1,6 @@
 <script>
 
+    import { Dropdown } from '@y7k/component-dropdown';
     import FilterFieldMixin from './FilterFieldMixin';
 
     /**
@@ -10,6 +11,10 @@
         mixins: [
             FilterFieldMixin,
         ],
+
+        components: {
+            Dropdown,
+        },
 
         props: ['options', 'optionsConditional', 'showArrow'],
 

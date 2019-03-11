@@ -1,5 +1,6 @@
 <script>
 
+    import { NavigationBar } from '@y7k/component-navigation-bar';
     import FilterFieldMixin from './FilterFieldMixin';
 
     /**
@@ -10,6 +11,10 @@
         mixins: [
             FilterFieldMixin,
         ],
+
+        components: {
+            NavigationBar,
+        },
 
         props: ['options', 'optionsConditional'],
 

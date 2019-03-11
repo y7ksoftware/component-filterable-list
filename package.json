@@ -1,25 +1,42 @@
 {
-  "name": "@y7k/filterable-list",
-  "version": "1.0.3",
-  "description": "A flexible container for a list if items with filter querying and pagination/batch loading",
-  "main": "src/js/main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Y7K/filterable-list.git"
-  },
-  "author": "Robert Krieg",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Y7K/filterable-list/issues"
-  },
-  "homepage": "https://github.com/Y7K/filterable-list#readme",
-  "dependencies": {
-    "lodash": "^4.0.0"
-  },
-  "peerDependencies": {
-    "vue": "^2.0.0"
-  }
+    "name": "@y7k/component-filterable-list",
+    "version": "1.0.3",
+    "description": "A flexible container for a list if items with filter querying and pagination/batch loading",
+    "main": "src/js/main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint --ext .js,.vue src/js/main.js",
+        "lintfix": "eslint --fix --ext .js,.vue src/js/main.js",
+        "stylelint": "stylelint src/scss"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Y7K/component-filterable-list.git"
+    },
+    "author": "Robert Krieg",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Y7K/component-filterable-list/issues"
+    },
+    "homepage": "https://github.com/Y7K/component-filterable-list#readme",
+    "dependencies": {
+        "lodash": "^4.0.0",
+        "@y7k/component-button-bar": "^1.0.0",
+        "@y7k/component-checkbox": "^1.0.0",
+        "@y7k/component-dropdown": "^1.0.0",
+        "@y7k/component-navigation-bar": "^1.0.0",
+        "@y7k/component-text-input": "^1.0.0"
+    },
+    "peerDependencies": {
+        "vue": "^2.0.0"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.2.3",
+        "eslint-config-airbnb-base": "^12.1.0",
+        "eslint-plugin-html": "^4.0.3",
+        "eslint-plugin-import": "^2.11.0",
+        "eslint": "^4.19.1",
+        "stylelint-config-sass-guidelines": "^5.0.0",
+        "stylelint": "^9.2.1"
+    }
 }

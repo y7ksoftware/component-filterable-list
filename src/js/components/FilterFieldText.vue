@@ -1,11 +1,20 @@
 <script>
 
+    import { TextInput } from '@y7k/component-text-input';
     import FilterFieldMixin from './FilterFieldMixin';
 
     /**
      *
      */
     export default {
+
+        mixins: [
+            FilterFieldMixin,
+        ],
+
+        components: {
+            TextInput,
+        },
 
         props: {
             placeholder: {
@@ -14,9 +23,6 @@
             },
         },
 
-        mixins: [
-            FilterFieldMixin,
-        ],
 
         methods: {
             input(value) {

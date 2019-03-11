@@ -17,8 +17,8 @@ export default {
         Vue.component('filter-field-checkbox', _FilterFieldCheckbox);
         Vue.component('filter-field-button-bar', _FilterFieldButtonBar);
         Vue.component('filter-field-navigation-bar', _FilterFieldNavigationBar);
-    }
-}
+    },
+};
 
 export const FilterableList = _FilterableList;
 export const FilterFieldText = _FilterFieldText;

@@ -1,8 +1,8 @@
 
 <script>
 
-    import { buildQueryUrl, buildQueryString, getURLHashbangAttributes } from '../utils/url';
     import omit from 'lodash/omit';
+    import { buildQueryUrl, buildQueryString, getURLHashbangAttributes } from '../utils/url';
 
     /**
      *

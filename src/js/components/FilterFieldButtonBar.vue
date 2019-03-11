@@ -1,5 +1,6 @@
 <script>
 
+    import { ButtonBar } from '@y7k/component-button-bar';
     import FilterFieldMixin from './FilterFieldMixin';
 
     /**
@@ -10,6 +11,10 @@
         mixins: [
             FilterFieldMixin,
         ],
+
+        components: {
+            ButtonBar,
+        },
 
         props: ['options', 'optionsConditional'],
 
