@@ -9,14 +9,14 @@ It is based on [Vue 2](https://vuejs.org), [MaintainableCSS](https://maintainabl
 ![Component](img-component.png)
 
 
-## Installation
+## Installation
 
 ##### Install npm package
 ```bash
 npm install @y7k/component-filterable-list --save
 ```
 
-##### Include in your project
+##### Include in your project
 ```js
 import filterableList from '@y7k/component-filterable-list';
 ```
