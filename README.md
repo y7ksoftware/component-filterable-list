@@ -51,10 +51,15 @@ In your main.scss file
 @import '@y7k/component-text-input/src/scss/textInput';
 @import '@y7k/component-button-bar/src/scss/buttonBar';
 @import '@y7k/component-navigation-bar/src/scss/navigationBar';
-
+```
+```scss
 // If you don't set "node_modules" as a webpack include path:
-@import '../[path]/../node_modules/@y7k/component-filterable-list/src/scss/filterableList';
-...
+@import '../[path]/../node_modules/@y7k/component-filterable-list/src/scss/@import';
+@import '../[path]/../node_modules/@y7k/component-dropdown/src/scss/dropdown';
+@import '../[path]/../node_modules/@y7k/component-checkbox/src/scss/checkbox';
+@import '../[path]/../node_modules/@y7k/component-text-input/src/scss/textInput';
+@import '../[path]/../node_modules/@y7k/component-button-bar/src/scss/buttonBar';
+@import '../[path]/../node_modules/@y7k/component-navigation-bar/src/scss/navigationBar';
 ```
 
 
