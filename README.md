@@ -45,8 +45,16 @@ In your main.scss file
 ```scss
 @import '@y7k/filterable-list/src/scss/filterableList';
 
+// You need the styles for these dependencies aswell
+@import '@y7k/component-dropdown/src/scss/dropdown';
+@import '@y7k/component-checkbox/src/scss/checkbox';
+@import '@y7k/component-text-input/src/scss/textInput';
+@import '@y7k/component-button-bar/src/scss/buttonBar';
+@import '@y7k/component-navigation-bar/src/scss/navigationBar';
+
 // If you don't set "node_modules" as a webpack include path:
 @import '../[path]/../node_modules/@y7k/component-filterable-list/src/scss/filterableList';
+...
 ```
 
 
