@@ -9,7 +9,7 @@ import _FilterFieldButtonBar from './components/FilterFieldButtonBar';
 import _FilterFieldNavigationBar from './components/FilterFieldNavigationBar';
 
 export default {
-    registerGlobally() {
+    registerGlobally: function() {
         Vue.component('filterable-list', _FilterableList);
         Vue.component('filter-field-text', _FilterFieldText);
         Vue.component('filter-field-select', _FilterFieldSelect);
