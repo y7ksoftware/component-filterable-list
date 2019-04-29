@@ -7,7 +7,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint --ext .js,.vue src/js/main.js",
         "lintfix": "eslint --fix --ext .js,.vue src/js/main.js",
-        "stylelint": "stylelint src/scss"
+        "stylelint": "stylelint src/scss",
+        "postpublish": "git push --tags"
     },
     "repository": {
         "type": "git",
