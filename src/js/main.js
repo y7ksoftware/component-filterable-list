@@ -7,9 +7,10 @@ import _FilterFieldHidden from './components/FilterFieldHidden';
 import _FilterFieldCheckbox from './components/FilterFieldCheckbox';
 import _FilterFieldButtonBar from './components/FilterFieldButtonBar';
 import _FilterFieldNavigationBar from './components/FilterFieldNavigationBar';
+import _FilterFieldMixin from './components/FilterFieldMixin';
 
 export default {
-    registerGlobally() {
+    registerGlobally: function() {
         Vue.component('filterable-list', _FilterableList);
         Vue.component('filter-field-text', _FilterFieldText);
         Vue.component('filter-field-select', _FilterFieldSelect);
@@ -27,3 +28,4 @@ export const FilterFieldHidden = _FilterFieldHidden;
 export const FilterFieldCheckbox = _FilterFieldCheckbox;
 export const FilterFieldButtonBar = _FilterFieldButtonBar;
 export const FilterFieldNavigationBar = _FilterFieldNavigationBar;
+export const FilterFieldMixin = _FilterFieldMixin;
