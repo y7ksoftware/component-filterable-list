@@ -134,6 +134,11 @@
                 });
                 const items = await axios.get(this.queryUrl);
 
+                // Replace again, cause of race conditions, maybe after loading
+                if (replaceItems) {
+                    this.$refs.content.children[0].innerHTML = '';
+                }
+
                 this.isLoading = false;
                 this.$refs.content.children[0].insertAdjacentHTML('beforeend', items.data);
                 this.hasMoreItems = this.$refs.content.querySelector('meta[name="hasNoMore"]') === null;
