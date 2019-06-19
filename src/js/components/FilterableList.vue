@@ -97,7 +97,7 @@
                             hashBangAttributes[key] = value;
                         }
                     }
-                    this.filter = Object.assign({}, hashBangAttributes);
+                    this.filter = Object.assign(this.filter, hashBangAttributes);
                     this.multiChunk = this.chunk;
                     this.loadItems(true);
                     this.multiChunk = 0;
