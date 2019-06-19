@@ -28,6 +28,14 @@
             },
         },
 
+        watch: {
+            optionsConditional() {
+                if (!this.activeOptions.find(option => option.value === this.value)) {
+                    this.$emit('input', this.activeOptions[0].value);
+                }
+            },
+        },
+
 
         methods: {
             input(value) {
