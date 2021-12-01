@@ -158,7 +158,7 @@
                 }
 
                 if (this.loadMoreGtmEvent && window.dataLayer) {
-                    window.dataLayer.push(loadMoreGtmEvent);
+                    window.dataLayer.push(this.loadMoreGtmEvent);
                 }
             },
 
