@@ -34,6 +34,10 @@
                 type: Boolean,
                 default: false,
             },
+            loadMoreGtmEvent: {
+                type: Object,
+                default: null,
+            },
         },
 
 
@@ -145,12 +149,16 @@
             },
 
 
-            loadNextChunk() {
+            async loadNextChunk() {
                 this.chunk++;
-                this.loadItems(false);
+                await this.loadItems(false);
 
                 if (this.useUrlHistory) {
                     this.adjustUrl();
+                }
+
+                if (this.loadMoreGtmEvent && window.dataLayer) {
+                    window.dataLayer.push(loadMoreGtmEvent);
                 }
             },
 
